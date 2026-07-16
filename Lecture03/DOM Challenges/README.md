@@ -1,22 +1,23 @@
-# 📘 Lecture 2 – JavaScript Control Flow & Functions
+# 📘 Lecture 3 – JavaScript DOM & Challenges
 
-In this lecture, I learned more JavaScript concepts like conditions, loops, and functions. I practiced writing programs in the Chrome browser console.
+In this lecture, I learned how JavaScript interacts with HTML using the DOM (Document Object Model). I also solved DOM-based practice challenges.
 
 ## 📚 Topics Covered
-- Conditional Statements (`if`, `else`, `else if`)
-- Loops (`for`, `while`, `do...while`)
-- Functions
-- Function Parameters
-- Return Statement
-- Nested Conditions and Loops
-- Basic Problem Solving
+- Introduction to DOM
+- Selecting HTML Elements
+- Changing Text and Styles
+- Adding and Removing Classes
+- Event Handling
+- Button Click Events
+- DOM Manipulation
 
 ## 🛠️ Practice
-- Wrote programs using conditions and loops
-- Created and called functions
-- Solved basic JavaScript problems in Chrome Console
+- Selected HTML elements using JavaScript
+- Updated text, colors, and styles
+- Handled button click events
+- Solved basic DOM challenges
 
 ## 🎯 Learning Outcome
-- Understood how to make decisions using conditions.
-- Learned to repeat tasks using loops.
-- Learned how to create reusable code with functions.
+- Understood how JavaScript controls web page elements.
+- Learned to make web pages interactive using the DOM.
+- Improved problem-solving through DOM challenges.

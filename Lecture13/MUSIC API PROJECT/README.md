@@ -1,4 +1,4 @@
-# 🎵 Music Search App
+# 🎵 Musico
 
 A React-based music application that uses the **iTunes Search API** to search for songs by **artist name or song title**. Users can browse search results and play **30-second song previews** directly in the application.
 

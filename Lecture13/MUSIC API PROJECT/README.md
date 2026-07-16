@@ -1,16 +1,19 @@
-# React + Vite
+# 🎵 Music Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React-based music application that uses the **iTunes Search API** to search for songs by **artist name or song title**. Users can browse search results and play **30-second song previews** directly in the application.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🔍 Search by artist name or song title
+- 🎵 Display song, artist, and album details
+- ▶️ Play 30-second song previews
+- 📱 Responsive and user-friendly interface
+- ⚡ Real-time search using the iTunes Search API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React
+- JavaScript
+- CSS
+- iTunes Search API
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🎯 Project Objective
+To build a React application that demonstrates API integration, dynamic data rendering, reusable components, and audio playback while allowing users to search and preview music.

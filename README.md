@@ -1,1 +1,2 @@
-# Summer-Training
+# 🚀 MERN Stack + Generative AI Summer Training
+This repository contains my daily lecture-wise notes, code, and practice from my Summer Training on the MERN Stack with Generative AI. Each folder represents a lecture and includes the concepts I learned, hands-on exercises, projects, and assignments completed during the session. The goal of this repository is to track my learning journey, maintain organized notes, and document my progress consistently throughout the training.

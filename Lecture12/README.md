@@ -1,4 +1,4 @@
-# 📘 Lecture 11 – React Basics & Groq API
+# 📘 Lecture 12 – React Basics & Groq API
 
 ## 📚 Topics Covered
 - Introduction to React

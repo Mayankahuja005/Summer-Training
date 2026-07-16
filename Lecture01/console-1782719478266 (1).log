@@ -1,0 +1,223 @@
+var a;
+undefined
+a;
+undefined
+a=10;
+10
+typeof a;
+'number'
+a='Amit';
+'Amit'
+typeof a;
+'string'
+a=true;
+true
+typeof a;
+'boolean'
+a= [10,20,40, "Amit", true , undefined,[666,444]];
+(7) [10, 20, 40, 'Amit', true, undefined, Array(2)]
+a= 100;
+100
+typeof a;
+'number'
+a= 100.20;
+100.2
+typeof a;
+'number'
+a=1;
+1
+typeof a;
+'number'
+a=436879789586978956078697860978805780965097;
+4.368797895869789e+41
+typeof a;
+'number'
+a=436879789586978956078697860978805780965097n;
+436879789586978956078697860978805780965097n
+typeof a;
+'bigint'
+a = BigInt("574398759847984769475967945679457");
+574398759847984769475967945679457n
+a=436879789586978956078697860978805780965097e;
+VM755:1 Uncaught SyntaxError: Invalid or unexpected token
+a=5353454354353453453453453453453.22253463645n;
+VM831:1 Uncaught SyntaxError: Invalid or unexpected token
+a=Number.MAX_SAFE_INTEGER;
+9007199254740991
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+a=9007199254740992n;
+9007199254740992n
+++a;
+9007199254740993n
+++a;
+9007199254740994n
+++a;
+9007199254740995n
+420853909058646n + 6456456;
+VM975:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:18
+(anonymous) @ VM975:1
+100 - "Amit"
+NaN
+100 + "Amit";
+'100Amit'
+100 + "Amit";
+'100Amit'
+10 - "Amit";
+NaN
+typeof NaN;
+'number'
+typeof 10;
+'number'
+typeof 10.20;
+'number'
+10/0;
+Infinity
+typeof Infinity;
+'number'
+isNaN(10-"ten")?"Something went wrong ":100;
+'Something went wrong '
+isFinite(10/0)?10:"something went wrong ";
+'something went wrong '
+100 + true;
+101
+100 +"";
+'100'
+true + true;
+2
+a = "Amit";
+'Amit'
+a= 'Amit'l
+VM1588:1 Uncaught SyntaxError: Unexpected identifier 'l'
+a= 'Amit';
+'Amit'
+a = "Let's do it ";
+"Let's do it "
+a = `jgfdgjlfdglkfdjgfdlk
+kfskghdfkjgdfghkjdf
+gdfhkjgjkdf`;
+'jgfdgjlfdglkfdjgfdlk\nkfskghdfkjgdfghkjdf\ngdfhkjgjkdf'
+console.log(a);
+VM1769:1 jgfdgjlfdglkfdjgfdlk
+kfskghdfkjgdfghkjdf
+gdfhkjgjkdf
+undefined
+var x = 10;
+undefined
+var y = 20;
+undefined
+var z = `X is ${x} Y is ${y}`;
+undefined
+z;
+'X is 10 Y is 20'
+x=1000;
+1000
+var z = `X is ${x} Y is ${y}`;
+undefined
+z;
+'X is 1000 Y is 20'
+var e = Symbol();
+undefined
+var e2 = Symbol();
+undefined
+e==e2;
+false
+typeof e;
+'symbol'
+a = 10;
+10
+a  + 20;
+30
+a;
+10
+a= a + 20;
+30
+a;
+30
+a= "Amit";
+'Amit'
+a.toUpperCase();
+'AMIT'
+a;
+'Amit'
+var arr = [10,20,30,40];
+undefined
+typeof arr;
+'object'
+arr.length;
+4
+arr.sort();
+(4) [10, 20, 30, 40]
+arr.push(1000);
+5
+arr;
+(5) [10, 20, 30, 40, 1000]
+arr;
+(5) [10, 20, 30, 40, 1000]
+var b = arr;
+undefined
+b;
+(5) [10, 20, 30, 40, 1000]
+b.push(4444);
+6
+arr;
+(6) [10, 20, 30, 40, 1000, 4444]
+arr = null;
+null
+arr;
+null
+typeof arr;
+'object'
+var arr = [10,20,30,40];
+undefined
+var e = arr;
+undefined
+arr = null;
+null
+e;
+(4) [10, 20, 30, 40]
+e = null;
+null
+var w = {};
+undefined
+typeof w;
+'object'
+var arr = [10,20,30,40];
+undefined
+typeof arr;
+'object'
+arr instanceof Array;
+true
+w instanceof Array;
+false
+w instanceof Object;
+true
+typeof Array;
+
+'function'
+typeof Object;
+'function'
+var dhoni= {name:'MS ' , age : 43, 6:100, 4:200};
+    
+undefined
+dhoni.name;
+'MS '
+dhoni.age;
+43
+dhoni.6;
+VM3528:1 Uncaught SyntaxError: Unexpected number
+dhoni[6];
+100
+dhoni["name"];
+'MS '
+var x = 'name';
+undefined
+dhoni[x];
+'MS '
+dhoni.x;
+undefined

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button onclick="ChangeColor('#d12020ec')"  style="background-color: #d12020ec;color:white">RED</button>
+    <button onclick="ChangeColor( '#1117d2ec')"  style="background-color: #1117d2ec;color:white">Blue</button>
+    <button onclick="ChangeColor('#d6c211ec')"  style="background-color: #d6c211ec;color:white">YELLOW</button>
+    <button onclick="ChangeColor('#e80d6cec')"  style="background-color: #e80d6cec;color:white">Pink</button>
+    <button onclick="RandomColor()">Change Color</button>
+
+
+    <script>
+        const body=document.getElementById("body");
+        function ChangeColor(color){
+            body.style.backgroundColor=color;
+        }
+
+
+        function RandomColor(){
+            let hexcolor="#";
+            const str="0123456789ABCDEF"
+            for(let i=0;i<6;i++){
+               hexcolor=hexcolor+ str[Math.floor(Math.random()*16)];
+            }
+            ChangeColor(hexcolor)
+        }
+    </script>
+</body>
+</html>

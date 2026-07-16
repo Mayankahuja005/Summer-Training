@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="RandomPassGen()" id="PassGen">Click to Generate a 6 Character</button>
+    <p id="Pass"></p>
+
+    <script>
+        const Pass=document.getElementById("Pass");
+        function RandomPassGen(){
+            const str="0123456789ABCDEF";
+            let pass=""
+            for(let i=0;i<6;i++){
+                pass=pass+str[Math.floor(Math.random()*16)];
+                console.log(pass);
+            }
+            Pass.innerHTML=pass;
+        }
+    </script>
+</body>
+</html>

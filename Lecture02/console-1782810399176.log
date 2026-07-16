@@ -1,0 +1,286 @@
+var arr= [10,20,30,40,50];
+undefined
+typeof arr;
+'object'
+arr instanceof Array;
+true
+typeof Array;
+'function'
+arr.length;
+5
+arr.pop();
+50
+var obj = {id:1001 , name:'Amit', 12:80};
+undefined
+obj.id;
+1001
+obj instanceof Object;
+true
+typeof obj;
+'object'
+typeof Object;
+'function'
+arr;
+(4) [10, 20, 30, 40]
+typeof arr;
+'object'
+arr instanceof Array;
+true
+arr instanceof Object;
+true
+obj;
+{12: 80, id: 1001, name: 'Amit'}
+obj instanceof Array;
+false
+obj instanceof Object;
+true
+obj.name;
+'Amit'
+obj[12];
+80
+obj.12;
+VM954:1 Uncaught SyntaxError: Unexpected number
+obj['name']
+'Amit'
+function add(a,b){
+    return a + b;
+}
+undefined
+add(10,20);
+30
+add(10,"ten");
+'10ten'
+add(10);
+NaN
+add();
+NaN
+function add(a=0,b=0){
+    return a + b;
+}
+undefined
+add();
+0
+add(10);
+10
+add(10,20);
+30
+function add(){
+    console.log(" i am the add ");
+}
+undefined
+add();
+VM1333:2  i am the add 
+undefined
+add(1,2,3);
+VM1333:2  i am the add 
+undefined
+add(1,2,[3,90], true, "100");
+VM1333:2  i am the add 
+undefined
+console.log(10, "Amit",true, [90,100]);
+VM1573:1 10 'Amit' true (2) [90, 100]
+undefined
+function add(){
+    
+}
+undefined
+console.dir(add);
+VM1684:1 ƒ add()length: 0name: "add"prototype: {}arguments: nullcaller: null[[FunctionLocation]]: VM1622:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function add(){
+    console.log(" i am the add ", arguments.length);
+}
+undefined
+add(1,2);
+VM1796:2  i am the add  2
+undefined
+add(1,2, "Hello");
+VM1796:2  i am the add  3
+undefined
+add(1,2, "Hello",[90,100]);
+VM1796:2  i am the add  4
+undefined
+add(1,2, "Hello",[90,100], function test(){});
+VM1796:2  i am the add  5
+undefined
+typeof add;
+'function'
+var z = 100;
+undefined
+typeof z;
+'number'
+z = add;
+ƒ add(){
+    console.log(" i am the add ", arguments.length);
+}
+typeof z;
+'function'
+function add(){
+    var sum = 0;
+    //console.log(" i am the add ", arguments.length);
+    for(var i = 0; i<arguments.length; i++){
+        sum = sum + arguments[i];
+    }
+    return sum;
+}
+undefined
+add();
+0
+add(1,2,3,4,5);
+15
+add(1,2,3,"4",5);
+'645'
+function add(){
+    var sum = 0;
+    //console.log(" i am the add ", arguments.length);
+    for(var i = 0; i<arguments.length; i++){
+        sum = sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+add(1,2,3,"4",5);
+15
+parseInt("10");
+10
+parseInt("ten");
+NaN
+isNaN(parseInt("ten"))?0:10;
+0
+add(1,2,3,"four",5);
+NaN
+100 + NaN
+NaN
+function add(){
+    var sum = 0;
+    //console.log(" i am the add ", arguments.length);
+    for(var i = 0; i<arguments.length; i++){
+        sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return sum;
+}
+undefined
+add(10,20,"30","ten",90);
+150
+10 + [10,20];
+'1010,20'
+10 + parseInt([10,20]);
+20
+parseInt(function show(){
+    return 100;
+});
+NaN
+function add(){
+    var sum = 0;
+    //console.log(" i am the add ", arguments.length);
+    for(var i = 0; i<arguments.length; i++){
+        if(typeof arguments[i] =='function'){
+            arguments[i] = arguments[i]();
+        }
+        sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return sum;
+}
+undefined
+add(10,"20", "ten", function show(){
+    return 100;
+}, function test(){ return "200"});
+330
+function add(){
+    var sum = 0;
+    //console.log(" i am the add ", arguments.length);
+    for(var i = 0; i<arguments.length; i++){
+        if(arguments[i] instanceof Array){
+            for(var j = 0; j<arguments[i].length; j++){
+                sum = sum + (isNaN(parseInt(arguments[i][j]))?0:parseInt(arguments[i][j]));
+            }
+            continue;
+        }
+        else if(typeof arguments[i] =='function'){
+            arguments[i] = arguments[i]();
+        }
+        sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return sum;
+}
+undefined
+add(1,"2","three",[4,"5"], function (){return 6});
+18
+
+disp();
+function disp(){
+// var g;
+    console.log("I am the Disp ", g);
+        var g = 10; // g = 10
+    console.log("I am g ",g); 
+}
+
+VM3514:5 I am the Disp  undefined
+VM3514:7 I am g  10
+undefined
+
+disp();
+function disp(){
+// var g;
+    console.log("I am the Disp ", g);
+        var g = 10; // g = 10
+    console.log("I am g ",g); 
+    var g = 20; // g = 20
+    console.log("i am g again ", g);
+}
+
+VM3578:5 I am the Disp  undefined
+VM3578:7 I am g  10
+VM3578:9 i am g again  20
+undefined
+g;
+VM3587:1 Uncaught ReferenceError: g is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM3587:1
+disp;
+ƒ disp(){
+// var g;
+    console.log("I am the Disp ", g);
+        var g = 10; // g = 10
+    console.log("I am g ",g); 
+    var g = 20; // g = 20
+    console.log("i am g again ", g);
+}
+
+var g = 999;
+disp();
+function disp(){
+// var g;
+    console.log("I am the Disp ", g);
+        var g = 10; // g = 10
+    console.log("I am g ",g); 
+    var g = 20; // g = 20
+    console.log("i am g again ", g);
+}
+console.log(g);
+
+VM3646:6 I am the Disp  undefined
+VM3646:8 I am g  10
+VM3646:10 i am g again  20
+VM3646:12 999
+undefined
+typeof window;
+'object'
+window instanceof Window;
+true
+typeof Window;
+'function'
+window.g;
+999
+g; // window.g
+999
+disp();
+VM3646:6 I am the Disp  undefined
+VM3646:8 I am g  10
+VM3646:10 i am g again  20
+undefined
+window.disp();
+VM3646:6 I am the Disp  undefined
+VM3646:8 I am g  10
+VM3646:10 i am g again  20
+undefined

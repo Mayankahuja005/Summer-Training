@@ -1,0 +1,91 @@
+.box{
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    /* transition: background 0.3s ease,width 0.5s ease; */
+    transition: All 0.5s ease;
+}
+.box:hover{
+    background-color: red;
+    width: 500px;
+}
+
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        opacity: 0.5;
+        background-color: aqua;
+        transform: translateX(0);
+    }
+    75%{
+        background-color: black;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+}
+.element{
+    font-size:3rem;
+    color: white;
+    background-color: green;
+    animation: slideIn 5s ease infinite;
+}
+
+/* 
+@keyframes pulse{
+    0%{
+        transform:rotate(0deg)
+    }
+    50%{
+       background-color: red;
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color: green;
+    }
+} */
+/* .element2{
+    height: 250px;
+    width: 250px;
+    background-color: purple;
+    animation:pulse 1s ease infinite;
+} */
+
+
+@keyframes move{
+    0%{
+        transform: translate(0,0);
+    }
+    20%{
+        transform: translate(100px,-100px);
+    }
+    40%{
+        transform: translate(200px,100px);
+    }
+    60%{
+        transform: translate(300px,-100px);
+    }
+    80%{
+        transform: translate(400px,100px);
+    }
+    100%{
+        transform: translate(500px,-100px);
+    }
+}
+
+.element3{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 100%;
+    border: 2px solid black;
+    animation: move 5s ease infinite;
+}

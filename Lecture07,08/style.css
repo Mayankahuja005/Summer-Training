@@ -1,0 +1,106 @@
+input[type="text"]{
+    color:red;
+    background-color: greenyellow;
+}
+a:hover{color:red;text-decoration:none;}
+input:focus{box-shadow: 0 0 5px rgb(48, 175, 120);}
+button:active{background-color: aqua;}
+
+
+li:first-child{background-color: red;}
+li:nth-child(2){background-color: beige;}
+li:nth-child(odd){border:2px solid rgb(30, 164, 72)}
+
+
+/* p:before{
+    content: "<===============";
+    position: absolute;
+    left:50%
+}
+p:after{
+    content: "=>";
+} */
+
+/* 
+p::first-line{color:green}
+p::first-letter{font-size:200px ;color:black} */
+
+div p{
+    color:aqua
+}
+/* div > p{
+    color:aqua
+}
+div h6 + p{
+    color:aqua
+}
+div h6 ~ p{
+    color:aqua
+} */
+
+p{
+    border-bottom: 2px solid black;
+}
+p:not(.selector){
+    color:gray;
+}
+.div{
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    position: sticky;
+    top:0px;
+}
+.relative{
+    width:500px;
+    height: 200px;
+    position: relative;
+    background-color: aqua;
+    
+}
+.absolute{
+    height: 150px;
+    width:150px;
+    background-color: brown;
+    position: absolute;
+    top:100px;
+   z-index: -999;
+}
+
+/* .flex{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:6rem;
+}
+.element{
+    width:150px;
+    height:150px;
+    background-color: blue;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    flex:1;
+    border: 2px solid yellow;
+} */
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+}
+.element{
+    height: 150px;
+    background-color: blue;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    border: 2px solid yellow;
+}
+
+.textarea{
+    resize:none;
+}

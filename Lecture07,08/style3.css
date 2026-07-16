@@ -1,0 +1,52 @@
+body{
+    padding:2rem;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap:1rem;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 150px;
+    width:100vw;
+    background-color: aqua;
+}
+.main{
+    width: 100vw;
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(3,1fr);
+    gap:16px;
+}
+.foot{
+    height: 150px;
+    width:100vw;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color:purple;
+}
+.b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: yellow;
+}
+.b2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: orange;
+}
+.b3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: red;
+}

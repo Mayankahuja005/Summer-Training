@@ -1,0 +1,597 @@
+
+:root {
+  --red:       #F91914;
+  --red-b:     #B21222;
+  --red-deep:  #4C0016;
+  --orange:    #EF6F2E;
+  --mustard:   #FFC614;
+  --gold:      #F4A804;
+  --mustard-d: #ED900A;
+  --beige:     #f5e3cd;
+  --green:     #77C41E;
+  --black:     #1B1B1B;
+  --white:     #FFFFFF;
+  --modak:     'Modak', cursive;
+  --mouse:     'Mouse Memoirs', sans-serif;
+  --body:      'Inter', sans-serif;
+  --spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+*, *::before, *::after {
+     box-sizing: border-box; 
+     margin: 0; padding: 0; 
+    }
+html { 
+    scroll-behavior: smooth;
+    overflow-x: clip; 
+}
+body { 
+    font-family: var(--body);
+     background: var(--beige); 
+     color: var(--black); 
+     overflow-x: clip; 
+     /* cursor: none;  */
+    }
+img  { 
+    display: block;
+     max-width: 100%;
+      height: auto; 
+    }
+a    { 
+    text-decoration: none; 
+    color: inherit;
+ }
+button { 
+    border: none; 
+    background: none;
+     cursor: none; 
+     font-family: inherit; 
+    }
+::selection { background: var(--red); color: var(--white); }
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: var(--red-deep); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 4px; }
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+}
+.logo{
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:var(--red);
+    font-family: var(--modak);
+    -webkit-text-stroke: 2px var(--white);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.buttons .burger-btn{
+    font-family: var(--mouse);
+    background-color: var(--red);
+    color:var(--white);
+    font-size: 1.7rem;
+    padding: 4px 1rem;
+    border-radius: 18px;
+}
+.buttons .menu-btn{
+    font-family: var(--mouse);
+    background-color: var(--white);
+    color:var(--black);
+    font-size: 1.7rem;
+    padding: 4px 1rem;
+    border-radius: 18px;
+}
+
+/* Hero Section */
+.hero{
+    position: relative;
+    background-image: url("Image/hero_burger.png");
+    height:calc(95vh - 100px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height:calc(95vh - 100px);
+}
+.hero .hero-text{
+    text-transform: uppercase;
+    color: var(--mustard);
+    font-size: clamp(4rem,10vw,10rem);
+    position: absolute;
+    font-family: var(--modak);
+    -webkit-text-stroke: 5px var(--white);
+    text-align:center ;
+    width:60%;
+    max-width: 1400px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    line-height: clamp(6rem,20vw,11rem);
+}
+/* Classic Description */
+.desc-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.8rem;
+    padding:4rem 0;
+}
+.top-classic{
+    text-transform: uppercase;
+    font-family: var(--modak);
+    color: var(--red);
+    font-size: 3rem;
+    -webkit-text-stroke: 1px var(--black);
+    transform: rotate(-5deg);
+}
+.desc-section .classic-title{
+    font-size:clamp(8rem,20vw,14rem);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--mouse);
+    color:var(--red);
+    -webkit-text-stroke: 2px var(--black);
+    line-height: clamp(6rem,20vw,11rem);
+}
+.desc-section .classic-para{
+    font-family: var(--mouse);
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 650px;
+}
+.blob-svg{
+    width:200px;
+}
+.order-btn{
+    position:relative;
+}
+
+.order-btn span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: var(--mouse);
+    color:var(--white);
+    font-size: 2rem;
+}
+
+.order-btn:hover .blob-path{
+      fill:var(--red-deep);
+      animation: blobMorph 1s infinite ease-in-out alternate;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      
+}
+@keyframes blobMorph {
+  0% {
+    d: path("M310.777 0.20434C424.154 2.91791 540.733 50.9739 574.176 159.34C606.479 264.014 533.962 365.999 442.064 425.623C364.995 475.626 270.863 455.893 193.524 406.309C93.8313 342.395 -27.3608 259.503 5.48889 145.729C40.0621 25.9857 186.179 -2.77783 310.777 0.20434Z");
+  }
+  50% {
+    d: path("M295 8C412 -4 558 58 575 176C592 294 510 392 418 436C326 480 218 456 148 398C78 340 -18 248 13 136C44 24 178 20 295 8Z");
+  }
+  100% {
+    d: path("M325 5C447 -2 557 68 575 187C593 306 510 402 410 442C310 482 198 457 128 392C58 327 -28 232 17 122C62 12 203 12 325 5Z");
+  }
+}
+/* gallery-card */
+.gallery{
+    padding:3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.2rem
+}
+.gallery-card{
+    width:350px;
+    height:450px;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.gallery-card:hover{
+    transform: rotate(5deg);
+}
+.gallery-card img{
+    object-fit: cover;
+    height: 100%;
+    transition: all 1s ease;
+  
+}
+.gallery-card img:hover{
+    transform:scale(1.2);
+}
+/* .burger-boy Sticker*/
+@keyframes move{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+.burger-boy img:hover{
+    transform: scale(1.2);
+}
+.burger-boy{
+    position: absolute;
+    top:1400px;
+    width:320px;
+    height: 320px;
+    object-fit: cover;
+    animation: move 4s ease infinite;
+    transition: all 1s ease;
+}
+/* Signature-Burger */
+.product-section{
+    background-color: var(--red);
+    color:var(--beige);
+    text-align: center;
+    padding:4rem 0;
+    font-family: var(--mouse);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-menu{
+    font-size:1.4rem ;
+    letter-spacing: 4px;
+    font-weight:400;
+    text-transform: uppercase;
+}
+.signature-title{
+    font-size:clamp(4.5rem,10vw,7rem);
+    font-family: var(--modak);
+    line-height: clamp(3.5rem,10vw,6rem);
+    text-transform: uppercase;
+    -webkit-text-stroke: 5px var(--red-deep);
+    padding: 1rem;
+}
+.signature-desc{
+    font-size: 1.3rem;
+}
+/* Product cards */
+.product-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    gap:1.4rem;
+    width: 100%;
+    max-width: 1400px;
+}
+.product-card{
+    background-color: var(--white);
+    border-radius: 3rem;
+    padding: 2rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.product-card img{
+    width: clamp(30rem,10vw,50rem);
+}
+.product-name{
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    gap:7rem;
+    align-items: center;
+}
+.burger-name{
+    color: var(--red);
+    -webkit-text-stroke: 1px var(--black);
+}
+.product-name .price{
+    color: var(--black);
+}
+.product-card .add-cart{
+    background-color: var(--mustard);
+    display: inline-block;
+    align-self: end;
+    font-size: 5rem;
+    padding: 2rem;
+    border-radius: 50%;
+    line-height: 1.5rem;
+    transition: all 0.2s ease;
+
+}
+.product-card .add-cart:hover{
+    background-color: var(--mustard-d);
+    transform: rotate(90deg) scale(1.05);
+    opacity: 1;
+    visibility: visible;
+}
+.desc{
+    opacity: 0.9;
+    width:23rem;
+    border-radius: 3rem;
+    background-color: var(--beige);
+    /* border: 2px solid black; */
+    padding: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap:1rem;
+    position: absolute;
+    top:7.9rem;
+    text-transform: uppercase;
+}
+.product-card:hover .desc{
+    display: flex;
+}
+.gen-details{
+    font-size: 1.2rem;
+    color: var(--red-deep);
+    display: flex;
+    justify-content: space-between;
+    gap:7rem;
+    padding: 0 1.2rem;
+}
+.gen-details .time{
+    color: #272727c6;
+}
+.ingredients{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:5px;
+    padding: 1.2rem;
+}
+.ingredient{
+    background-color: #7d7d7dad;
+    border:1px solid rgb(89,89,89);
+    padding: 1.2rem;
+    border-radius: 18px;
+    text-transform: uppercase;
+}
+.ingredient .top{
+    color:#272727c6;
+    font-size: 1.4rem;
+}
+.ingredient .bottom{
+    color:#272727c6;
+    font-size: 1.4rem;
+}
+.calpro{
+    width: 70%;
+    columns: var(--red-deep);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:1rem;
+    padding: 0 1rem;
+}
+.calpro span{
+    background-color: var(--orange);
+    padding:1.2rem;
+    font-size: 1.8rem;
+    border-radius: 18px;
+}
+/* French Fries Sticker */
+.french-fries img:hover{
+    transform: scale(1.2);
+}
+.french-fries{
+height: 450px;
+width: 450px;
+position: absolute;
+top:2000px;
+transition: all 1s ease;
+animation: move 4s ease infinite;
+}
+.boy img:hover{
+    transform: scale(1.2);
+}
+/* Burger Boy Sticker */
+.boy{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top:2100px;
+    left:1100px;
+    transition: all 1s ease;
+    animation: move 4s ease infinite;
+}
+/* Experience Section */
+.feel-it{
+    display: flex;
+    align-items: center;
+    font-family: var(--mouse);
+    position: relative;
+}
+.feel-it .badge{
+    font-size: 1.5rem;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 0.4rem 1.5rem;
+    text-transform: uppercase;
+    align-self: start;
+}
+.feel-it .feel-title{
+    font-size: clamp(8rem,10vw,12rem);
+    text-transform: uppercase;
+    color:var(--red);
+    line-height: 0.9;
+    font-weight: 900;
+    -webkit-text-stroke: 5px var(--white);
+    paint-order: stroke fill;
+    text-shadow: 0 4px 20px rgba(76,0,22,0.08);
+}
+.feel-it .feel-para{
+    font-size: 2rem;
+    max-width: 500px;
+}
+.feel-it .feel-button{
+    font-size: 1.7rem;
+    padding:0.8rem 2.8rem;
+    background-color: var(--red);
+    color:var(--white);
+    border-radius: 50px;
+    align-self: start;
+}
+.feel-it .left{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem 3rem;
+}
+.feel-it .sticker{
+    width:450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-70%,-50%);
+
+}
+.right{
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 800px;
+    overflow: hidden;
+}
+.right img{
+    object-fit: cover;
+}
+/* footer Section */
+.footer{
+    padding:2rem 3rem;
+    text-transform: uppercase;
+    font-family:var(--mouse) ;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.upper ul{
+    list-style: none;
+    display: flex;
+    gap:1.2rem;
+}
+.upper ul li{
+    cursor: pointer;
+}
+.upper ul li:hover{
+    color:var(--red);
+    text-decoration:underline ;
+}
+.lower{
+    color:gray;
+}
+hr{
+    border: 1px solid #00000833;
+    margin:0.8rem 0;
+}
+.footer-logo{
+    font-family: var(--modak);
+    font-size: clamp(8rem,10vw,20rem);
+    text-align: center;
+    color: var(--red);
+    -webkit-text-stroke: 4px var(--white);
+}
+.pop-up{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin: auto;
+}
+.pop-up .jump-lettuce{
+    animation: pop 1.9s ease infinite;
+}
+.pop-up .jump-tomato{
+    animation: pop 1.7s ease infinite;
+}
+.pop-up .jump-cheese{
+    animation: pop 1.5s ease infinite;
+}
+.pop-up .jump-patty{
+    animation: pop 1.3s ease infinite;
+}
+.pop-up .jump-fries{
+    animation: pop 1.1s ease infinite;
+}
+.pop-up .burger1{
+    animation: pop 2s ease infinite;
+}
+.pop-up .burger2{
+    animation: pop 2.1s ease infinite;
+}
+@keyframes pop{
+    0%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+    50%{
+        transform: translateY(-250px);
+        opacity:1
+    }
+    100%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+@media(max-width:768px){
+    .gallery, .product-cards, .feel-it {
+        flex-direction: column;
+    }
+    .sticker, .burger-boy{
+        display: none;
+    }
+    .feel-it .left{
+        text-align: center;
+        align-items: center;
+    }
+    .feel-it .badge, .feel-it, .feel-button{
+        align-self: center;
+    }
+}
+@media(max-width:480px){
+    header .buttons .burger-btn{
+        display: none;
+    }
+    footer{
+        padding:2rem 1rem;
+    }
+    footer .upper{
+        flex-direction: column;
+        gap:1rem;
+    }
+    .footer .lower{
+        text-align: center;
+    }
+    .boy{
+        display: none;
+    }
+    .french-fries{
+        display: none;
+    }
+}

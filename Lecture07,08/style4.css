@@ -1,0 +1,40 @@
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width:150px;
+    background-color: blueviolet;
+    position: relative;
+    font-size: 50px;
+
+}
+.div::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Before";
+    font-size: 50px;
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    position:absolute;
+   
+    top:200px;
+}
+.div::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Before";
+    font-size: 50px;
+    content: "After";
+    height: 150px;
+    width: 150px;
+    background-color:aqua;
+    position: absolute;
+   
+    top:400px;
+}
+

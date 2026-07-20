@@ -1,16 +1,87 @@
-# React + Vite
+# 🎵 Musicoo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern music streaming web application built with **React.js** that allows users to search and preview songs using the iTunes API. The project focuses on React fundamentals, state management with **Zustand**, routing, hooks, and responsive UI development using **Tailwind CSS**. Generative AI was used to assist in UI design during development.
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Musicoo** is a React-based music application where users can search for songs, listen to previews, and manage their favorite tracks. The application provides a smooth and responsive user experience while demonstrating modern frontend development practices.
 
-## React Compiler
+This project was developed as part of my **Summer Training (MERN + Generative AI)**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the Oxlint configuration
+* 🔍 Search songs in real time
+* 🎵 Listen to song previews
+* ❤️ Add and remove favorite songs
+* 🌙 Light/Dark theme support
+* 📱 Fully responsive design
+* ⚡ Fast search using debouncing
+* 🧭 Multi-page navigation with React Router
+* 🎨 Modern UI built with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+
+### State Management
+
+* Zustand
+
+### Routing
+
+* React Router DOM
+
+### API
+
+* iTunes Search API
+
+### React Concepts Used
+
+* Functional Components
+* JSX
+* Props
+* State
+* React Hooks
+  * useState
+  * useEffect
+* Custom Hook (useDebounce)
+* Conditional Rendering
+* Component Reusability
+
+### Styling
+
+* Tailwind CSS
+* Responsive Design
+* Flexbox
+* Grid Layout
+
+## 📂 Project Structure
+
+Musicoo/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── layout/
+│   ├── hooks/
+│   ├── store/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+
+## 👨‍💻 Developer
+
+**Mayank Ahuja**
+
+B.Tech (Artificial Intelligence & Machine Learning)
+
+Summer Training Project – **MERN + Generative AI**

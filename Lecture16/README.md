@@ -4,6 +4,8 @@ Today marked the beginning of my backend development journey during my summer tr
 
 ## 📚 Topics Covered
 
+
+
 * Introduction to Backend
 * Frontend vs Backend
 * Client & Server

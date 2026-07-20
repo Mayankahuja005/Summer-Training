@@ -1,16 +1,29 @@
-# React + Vite
+# 📚 Book Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React Book application created in Lecture 15 to practice React concepts.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📖 Browse books
+- 🔍 Search books with debounced search
+- 🛣️ React Routing for navigation
+- 🌐 Global state management using Zustand
+- 🪝 Custom Hooks for reusable logic
+- ⚡ Clean UI
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- Zustand
+- JavaScript
 
-## Expanding the Oxlint configuration
+## 📚 Concepts Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React Routing
+- Nested Routes
+- Zustand Store
+- Custom Hooks
+- `useDebounce` Hook
+- State Management
+- API Fetching

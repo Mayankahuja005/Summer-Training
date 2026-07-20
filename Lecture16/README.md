@@ -2,7 +2,7 @@
 
 Today marked the beginning of my backend development journey during my summer training. In this lecture, I learned the fundamental concepts and terminology of backend development and cover all theory related portion of backend development.
 
-### 📚 Topics Covered
+## 📚 Topics Covered
 
 * Introduction to Backend
 * Frontend vs Backend
@@ -29,6 +29,6 @@ Today marked the beginning of my backend development journey during my summer tr
 * Schema & Model
 * JWT (JSON Web Token)
   
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 This lecture built the foundation of backend development and provided an overview of how modern web applications communicate, process requests, and manage data.

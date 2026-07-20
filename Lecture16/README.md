@@ -28,5 +28,7 @@ Today marked the beginning of my backend development journey during my summer tr
 * Mongoose (ODM)
 * Schema & Model
 * JWT (JSON Web Token)
+  
+### 🎯 Learning Outcome
 
 This lecture built the foundation of backend development and provided an overview of how modern web applications communicate, process requests, and manage data.

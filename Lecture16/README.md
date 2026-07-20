@@ -3,9 +3,6 @@
 Today marked the beginning of my backend development journey during my summer training. In this lecture, I learned the fundamental concepts and terminology of backend development and cover all theory related portion of backend development.
 
 ## 📚 Topics Covered
-
-
-
 * Introduction to Backend
 * Frontend vs Backend
 * Client & Server

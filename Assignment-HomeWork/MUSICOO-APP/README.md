@@ -61,6 +61,7 @@ This project was developed as part of my **Summer Training (MERN + Generative AI
 
 ## 📂 Project Structure
 
+```text
 Musicoo/
 │
 ├── public/
@@ -77,6 +78,7 @@ Musicoo/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
 ## 👨‍💻 Developer
 

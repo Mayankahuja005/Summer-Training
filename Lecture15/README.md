@@ -9,7 +9,7 @@
 - Built a **Custom Hook** to reuse logic across multiple components.
 - Understood why custom hooks improve **code reusability** and keep components clean.
 
-## 📖 Key Learnings
+## 📖 Learing Outcomes
 
 - React Router helps create multiple pages in a React application.
 - A Store allows sharing state between components without prop drilling.

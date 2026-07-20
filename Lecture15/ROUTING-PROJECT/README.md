@@ -27,3 +27,7 @@ A simple React Book application created in Lecture 15 to practice React concepts
 - `useDebounce` Hook
 - State Management
 - API Fetching
+
+## 🎯 Project Objective
+
+The objective of this project was to understand and implement **React Routing**, **Zustand Store**, and **Custom Hooks** by building a functional book browsing application with reusable and efficient code.

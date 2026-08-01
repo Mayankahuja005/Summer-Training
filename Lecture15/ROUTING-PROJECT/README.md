@@ -24,7 +24,6 @@ A simple React Book application created in Lecture 15 to practice React concepts
 - Nested Routes
 - Zustand Store
 - Custom Hooks
-- `useDebounce` Hook
 - State Management
 - API Fetching
 

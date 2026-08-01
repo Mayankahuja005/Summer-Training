@@ -40,7 +40,7 @@ This project was developed as part of my **Summer Training (MERN + Generative AI
 
 ### Styling
 
-* Tailwind CSS
+* CSS
 * Responsive Design
 * Flexbox
 

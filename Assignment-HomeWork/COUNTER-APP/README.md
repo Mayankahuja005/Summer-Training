@@ -1,16 +1,71 @@
-# React + Vite
+# 🧮 Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern counter application built with **React.js** that allows users to increment, decrement, and reset the counter. The project focuses on React fundamentals, state management with **Zustand**, hooks, and responsive UI development using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Counter App is a React-based application where users can increase, decrease, and reset the counter value. The application provides a clean and responsive user experience while demonstrating modern frontend development practices.
 
-## React Compiler
+This project was developed as part of my **Summer Training (MERN + Generative AI)**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the Oxlint configuration
+* ➕ Increment Counter
+* ➖ Decrement Counter
+* 🔄 Reset Counter
+* ⚡ Global State Management with Zustand
+* 📱 Fully Responsive Design
+* 🎨 Modern UI built with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+
+### State Management
+
+* Zustand
+
+### React Concepts Used
+
+* Functional Components
+* JSX
+* Props
+* State
+* React Hooks
+* useState
+* Component Reusability
+
+### Styling
+
+* Tailwind CSS
+* Responsive Design
+* Flexbox
+
+## 📂 Project Structure
+
+```text
+Counter-App/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── store/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 👨‍💻 Developer
+
+**Mayank Ahuja**
+
+**B.Tech (Artificial Intelligence & Machine Learning)**
+
+**Summer Training Project – MERN + Generative AI**

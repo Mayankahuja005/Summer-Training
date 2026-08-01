@@ -23,7 +23,6 @@ This project was developed as part of my **Summer Training (MERN + Generative AI
 
 * React.js
 * Vite
-* Tailwind CSS
 
 ### State Management
 
